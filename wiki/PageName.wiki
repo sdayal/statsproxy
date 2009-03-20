@@ -1,6 +1,4 @@
-#Statsproxy for memcached
-
-== Introduction ==
+=== Introduction ===
 
 The statsproxy for memcached is a simple, but useful tool that allows you to
 use your web browser to get real-time stats for memcached instead of or in
@@ -29,7 +27,7 @@ CentOS 5.2 2.6.18 and later x86 64 bit gcc 3.4.6
 [add more]
 
 
-== Installation ==
+=== Installation ===
 
 Installing the statsproxy for memcached:
  
@@ -47,7 +45,7 @@ For example:
 >./statsproxy -F sample.cfg
 
 
-== Configuration ==
+=== Configuration ===
 
 Every memcached server that you'd like the statsproxy to monitor and report on
 requires an entry in the config file. 
@@ -62,7 +60,7 @@ For example:
 
 To monitor a memcached server from the web running on ip mc-1 and port 11211
 your proxy-mapping entry could look like following:
-
+{{{
     proxy-mapping {
         front-end = "mc-1:8080";
         back-end = "mc-1:11211";
@@ -71,7 +69,7 @@ your proxy-mapping entry could look like following:
         webpage-refresh-interval = 10;
         memcache-reporter = "off";
     }
-
+}}}
 After you start statsproxy, point your browser to mc-1:8080 to monitor your
 memcache server stats through the statsproxy web interface. You can also
 use telnet to the same address to get a buffered view of stats, including
