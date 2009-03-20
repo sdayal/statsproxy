@@ -32,18 +32,21 @@ CentOS 5.2 2.6.18 and later x86 64 bit gcc 3.4.6
 Installing the statsproxy for memcached:
  
 At your command prompt:
+{{{
 > tar -xzvf statsproxy-1.0.tgz
 > cd statsproxy-1.0
 > make
-
+}}}
 Starting the statsproxy for memcached:
 
 At your command prompt:
-usage: ./statsproxy -F <config file>
-
+{{{
+>./statsproxy -F <config file>
+}}}
 For example:
+{{{
 >./statsproxy -F sample.cfg
-
+}}}
 
 === Configuration ===
 
@@ -74,7 +77,7 @@ After you start statsproxy, point your browser to mc-1:8080 to monitor your
 memcache server stats through the statsproxy web interface. You can also
 use telnet to the same address to get a buffered view of stats, including
 'stats health'.
-
+{{{
 'front-end'
 IP & port information for proxied view of this memcached server
 
@@ -95,7 +98,7 @@ Webpage refresh interval in seconds.
 'memcache-reporter'
 Takes three different values: "modify" or "view" or "off". Reserved for
 future use.
-
+}}}
 
 == Usage ==
 
