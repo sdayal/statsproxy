@@ -104,7 +104,7 @@ future use.
 
 Once you have installed and configured the statsproxy for memcached, point
 your browser to the server where you memcache service is running, e.g.:
-
+{{{
 http://frontend-ip-address:8080
-
+}}}
 It's that easy!
