@@ -1,24 +1,4 @@
-=== Introduction ===
-
-The statsproxy for memcached is a simple, but useful tool that allows you to
-use your web browser to get real-time stats for memcached instead of or in
-addition to the standard memcached telnet interface.
-
-The statsproxy for memcached provides:
-
-1. A lightweight web view of memcached statistics without any changes or 
-additional resource usage in memcached, i.e. stats can be easily published
-and viewed for your memcached servers.
-
-2. A fast, buffered telnet view of memcached stats that can be leveraged by
-management and reporting systems, like Cacti.  Stats are reported in constant
-time irrespective of memcached's load level.
-
-3. A synthetic 'health check' stat that is currently not available in
-memcached, where the statsproxy does a periodic set command and checks that the
-memcached server handled it correctly.
-
-== Supported Platforms ==
+=== Supported Platforms ===
 
 The statsproxy for memcached was developed for Linux 2.6 and has been tested
 on the following distributions:
@@ -33,10 +13,9 @@ Linux 2.6.18-53.el5 x86_64 gcc 4.1.2 (Red Hat 4.1.2-42)
 
 Linux 2.6.12-1.1381_FC3smp x86_64 gcc 3.4.4 (Red Hat 3.4.4-2)
 
-== Required Libraries ==
+=== Required Libraries ===
 
 Requires 'bison'.
-
 
 === Installation ===
 
@@ -111,11 +90,11 @@ Takes three different values: "modify" or "view" or "off". Reserved for
 future use.
 }}}
 
-== Logging ==
+=== Logging ===
 
 All the logging is done to syslog.
 
-== Usage ==
+=== Usage ===
 
 Once you have installed and configured the statsproxy for memcached, point
 your browser to the server where you memcache service is running, e.g.:
