@@ -23,8 +23,19 @@ memcached server handled it correctly.
 The statsproxy for memcached was developed for Linux 2.6 and has been tested
 on the following distributions:
 
-CentOS 5.2 2.6.18 and later x86 64 bit gcc 3.4.6 
-[add more]
+CentOS 5.2 2.6.18 and later x86_64 bit gcc 4.1.2
+
+Linux 2.6.18-1.2798.fc6 x86_64 gcc 3.4.6 (Red Hat 3.4.6-4)
+
+Linux 2.6.9-1.667smp i686 athlon gcc 3.4.2 (Red Hat 3.4.2-6.fc3)
+
+Linux 2.6.18-53.el5 x86_64 gcc 4.1.2 (Red Hat 4.1.2-42)
+
+Linux 2.6.12-1.1381_FC3smp x86_64 gcc 3.4.4 (Red Hat 3.4.4-2)
+
+== Required Libraries ==
+
+Requires 'bison'.
 
 
 === Installation ===
@@ -99,6 +110,10 @@ Webpage refresh interval in seconds.
 Takes three different values: "modify" or "view" or "off". Reserved for
 future use.
 }}}
+
+== Logging ==
+
+All the logging is done to syslog.
 
 == Usage ==
 
