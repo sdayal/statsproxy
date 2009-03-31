@@ -102,3 +102,14 @@ your browser to the server where you memcache service is running, e.g.:
 http://frontend-ip-address:8080
 }}}
 It's that easy!
+
+=== Using Statsproxy with Cacti ===
+
+Cacti (http://www.cacti.net/) is a popular open-source monitoring and graphing solution that uses PHP and rrdtool.  It can graph pretty much anything including memcache via templates for memcached.
+
+Those memcache templates for cacti will also work when pointed at the statsproxy instead of the memcache instance.  A benefit to using the statsproxy is that it asks the memcache service for stats once (per configured time interval) and then can hand it out multiple times to multiple machines instead of your actual service handling those requests along with it's regular sets/gets.
+
+To get them to work together you'd have to either modify the templates to use port 8080 or change the statsproxy config to use port 11211 (assuming your memcache server is either on a different port or IP).
+
+
+
